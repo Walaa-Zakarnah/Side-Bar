@@ -1,0 +1,35 @@
+.menu {
+    background-color: rgba(241, 10, 245, 0.379);
+    color: white;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: -30%; 
+    height: 100%;
+    transition: right 0.8s ease; /*transition to left */
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(222, 183, 231, 0.45);
+    z-index: 9;
+    display: none;
+}
+
+.menu i{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.menu.open {
+    right: 0; 
+}
+.overlay.open {
+    display: block; 
+}
